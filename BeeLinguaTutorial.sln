@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeLinguaTutorial.API", "BeeLinguaTutorial.API\BeeLinguaTutorial.API.csproj", "{0704E4E3-CACD-4929-B018-6F48497E32BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0704E4E3-CACD-4929-B018-6F48497E32BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0704E4E3-CACD-4929-B018-6F48497E32BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0704E4E3-CACD-4929-B018-6F48497E32BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0704E4E3-CACD-4929-B018-6F48497E32BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A406386-7565-4F07-A139-517AAE87F0D4}
+	EndGlobalSection
+EndGlobal
