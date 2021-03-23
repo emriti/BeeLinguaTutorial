@@ -1,15 +1,13 @@
 ﻿using Newtonsoft.Json;
+using Nexus.Base.CosmosDBRepository;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace BeeLinguaTutorial.API
 {
-    public class Class
+    public class Class: ModelBase
     {
-        [JsonProperty("id")]
-        public string Id { get; set; }
-
         [JsonProperty("classCode")]
         public string ClassCode { get; set; }
 

@@ -41,6 +41,32 @@ namespace BeeLinguaTutorial.API
             return new OkObjectResult(class1);
         }
 
+        [FunctionName("GetClassByIdNexus")]
+        public static async Task<IActionResult> GetClassByIdNexus(
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "CourseNexus/{id}/{kode}")] HttpRequest req,
+            [CosmosDB(ConnectionStringSetting = "cosmos-bl-tutorial-serverless")] DocumentClient documentClient,
+            string id,
+            string kode,
+            ILogger log)
+        {
+            using var classRep = new Repository.Repositories.ClassRepository(documentClient);
+            var data = await classRep.GetAsync(predicate: p => p.Id == id, partitionKeys: new Dictionary<string, string> { { "ClassCode", kode } });
+            return new OkObjectResult(data);
+        }
+
+        [FunctionName("CreateDataNexus")]
+        public static async Task<IActionResult> CreateDataNexus(
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = "CourseNexus/create")] HttpRequest req,
+            [CosmosDB(ConnectionStringSetting = "cosmos-bl-tutorial-serverless")] DocumentClient documentClient,
+            ILogger log)
+        {
+            var class1 = new Class() { ClassCode = "abc1", Description = "xyz2" };
+
+            using var classRep = new Repository.Repositories.ClassRepository(documentClient);
+            var data = await classRep.CreateAsync(class1);
+            return new OkObjectResult(data);
+        }
+
     }
 }
 
