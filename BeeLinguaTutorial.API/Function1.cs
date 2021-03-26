@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+using BeeLinguaTutorial.DAL.Models;
+using BeeLinguaTutorial.DAL.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Documents;
@@ -49,7 +51,7 @@ namespace BeeLinguaTutorial.API
             string kode,
             ILogger log)
         {
-            using var classRep = new Repository.Repositories.ClassRepository(documentClient);
+            using var classRep = new Repositories.ClassRepository(documentClient);
             var data = await classRep.GetAsync(predicate: p => p.Id == id, partitionKeys: new Dictionary<string, string> { { "ClassCode", kode } });
             return new OkObjectResult(data);
         }
@@ -62,7 +64,7 @@ namespace BeeLinguaTutorial.API
         {
             var class1 = new Class() { ClassCode = "abc1", Description = "xyz2" };
 
-            using var classRep = new Repository.Repositories.ClassRepository(documentClient);
+            using var classRep = new Repositories.ClassRepository(documentClient);
             var data = await classRep.CreateAsync(class1);
             return new OkObjectResult(data);
         }

@@ -1,10 +1,9 @@
-﻿using Microsoft.Azure.Documents.Client;
+﻿using BeeLinguaTutorial.DAL.Models;
+using Microsoft.Azure.Documents.Client;
 using Nexus.Base.CosmosDBRepository;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace BeeLinguaTutorial.API.Repository
+namespace BeeLinguaTutorial.DAL.Repository
 {
     public class Repositories
     {

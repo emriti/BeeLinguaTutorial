@@ -1,10 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Nexus.Base.CosmosDBRepository;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace BeeLinguaTutorial.API
+namespace BeeLinguaTutorial.DAL.Models
 {
     public class Class: ModelBase
     {

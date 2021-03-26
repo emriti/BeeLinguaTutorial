@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeeLinguaTutorial.API", "BeeLinguaTutorial.API\BeeLinguaTutorial.API.csproj", "{0704E4E3-CACD-4929-B018-6F48497E32BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeLinguaTutorial.DAL", "BeeLinguaTutorial.DAL\BeeLinguaTutorial.DAL.csproj", "{072F855C-BAC9-4D0D-8924-B8EF0FEE1E09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeLinguaTutorial.BLL", "BeeLinguaTutorial.BLL\BeeLinguaTutorial.BLL.csproj", "{1368B15E-BB3A-4A17-B2A1-BBBBA029B2E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeLinguaTutorial.BLL.Test", "BeeLinguaTutorial.BLL.Test\BeeLinguaTutorial.BLL.Test.csproj", "{B91B85CD-D1C3-49E6-A86B-15412E31928C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{0704E4E3-CACD-4929-B018-6F48497E32BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0704E4E3-CACD-4929-B018-6F48497E32BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0704E4E3-CACD-4929-B018-6F48497E32BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072F855C-BAC9-4D0D-8924-B8EF0FEE1E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072F855C-BAC9-4D0D-8924-B8EF0FEE1E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072F855C-BAC9-4D0D-8924-B8EF0FEE1E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072F855C-BAC9-4D0D-8924-B8EF0FEE1E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1368B15E-BB3A-4A17-B2A1-BBBBA029B2E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1368B15E-BB3A-4A17-B2A1-BBBBA029B2E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1368B15E-BB3A-4A17-B2A1-BBBBA029B2E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1368B15E-BB3A-4A17-B2A1-BBBBA029B2E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B91B85CD-D1C3-49E6-A86B-15412E31928C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91B85CD-D1C3-49E6-A86B-15412E31928C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91B85CD-D1C3-49E6-A86B-15412E31928C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91B85CD-D1C3-49E6-A86B-15412E31928C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
